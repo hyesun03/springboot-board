@@ -27,7 +27,7 @@ public class PostsRepositoryTest {
     }
 
     @Test
-    public void LoadSavedPost() {
+    public void loadSavedPost() {
         postsRepository.save(Posts.builder()
                 .title("게시글 제목 테스트")
                 .content("게시글 본문 테스트")
@@ -43,7 +43,7 @@ public class PostsRepositoryTest {
     }
 
     @Test
-    public void SaveBaseTimeEntity() {
+    public void saveBaseTimeEntity() {
         LocalDateTime now = LocalDateTime.now();
         postsRepository.save(Posts.builder()
                 .title("제목 테스트")
